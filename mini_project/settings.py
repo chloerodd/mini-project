@@ -89,22 +89,22 @@ CORS_ALLOW_ALL_ORIGINS = True
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#   'default': {
-#     'ENGINE': 'django.db.backends.postgresql',
-#     'NAME': 'mini',
-#     'USER': 'chloe.rrodd',
-#     'PASSWORD': 'WO3sLcRk0ZfB',
-#     'HOST': 'ep-shrill-snowflake-706688.us-east-2.aws.neon.tech',
-#     'PORT': '5432',
-#   }
-# }
 DATABASES = {
-    'default': dj_database_url.config(
-        conn_max_age=600,
-        conn_health_checks=True,
-    )
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'mini',
+    'USER': 'chloe.rrodd',
+    'PASSWORD': 'WO3sLcRk0ZfB',
+    'HOST': 'ep-shrill-snowflake-706688.us-east-2.aws.neon.tech',
+    'PORT': '5432',
+  }
 }
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         conn_max_age=600,
+#         conn_health_checks=True,
+#     )
+# }
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
